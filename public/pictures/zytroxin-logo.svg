@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="zytrixon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3B30"/>
+      <stop offset="100%" stop-color="#FF6B5E"/>
+    </linearGradient>
+    <linearGradient id="zytrixon-sub" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#888888"/>
+    </linearGradient>
+  </defs>
+  <!-- Futuristic Geometric 'Z' Monogram for Zytrixon -->
+  <polygon points="15,20 85,20 75,34 38,34 78,74 85,74 85,80 15,80 25,66 62,66 22,26 15,26" fill="url(#zytrixon-grad)"/>
+  <!-- Growth Accent Slash -->
+  <polygon points="78,14 88,24 82,30 72,20" fill="url(#zytrixon-sub)" opacity="0.9"/>
+  <circle cx="85" cy="80" r="4" fill="#FF3B30"/>
+</svg>

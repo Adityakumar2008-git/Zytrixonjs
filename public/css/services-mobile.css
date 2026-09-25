@@ -1,0 +1,35 @@
+/* ==========================================================================
+   ZYTRIXON — SERVICES (MOBILE UI)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .service-detail-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .deliverables-checklist {
+        grid-template-columns: 1fr;
+    }
+    .framework-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header-section {
+        padding: 130px 6vw 50px;
+    }
+    .services-jump-bar {
+        top: 60px;
+        padding: 12px 6vw;
+    }
+    .service-detail-section {
+        padding: 70px 6vw 80px;
+    }
+    .framework-section-wrap {
+        padding: 70px 6vw 80px;
+    }
+    .framework-grid {
+        grid-template-columns: 1fr;
+    }
+}

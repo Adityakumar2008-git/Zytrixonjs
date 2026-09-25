@@ -1,0 +1,93 @@
+/* ==========================================================================
+   ZYTRIXON — PRICING & ENGAGEMENTS (DESKTOP UI)
+   ========================================================================== */
+
+.page-header-section {
+    padding: 160px 6vw 70px;
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--border-dark);
+}
+.page-header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.pricing-section-wrap {
+    background-color: var(--bg-light);
+    color: var(--text-dark-primary);
+    padding: 90px 6vw 120px;
+}
+.pricing-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1400px;
+    margin: 0 auto 100px;
+}
+.pricing-editorial-card {
+    background: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 44px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s var(--ease-out), box-shadow 0.3s;
+}
+.pricing-editorial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+.pricing-editorial-card.featured {
+    border: 1px solid var(--champagne);
+    box-shadow: 0 12px 35px rgba(216, 199, 181, 0.25);
+    position: relative;
+}
+.featured-tag {
+    position: absolute;
+    top: -12px;
+    right: 28px;
+    background: #0A0B0D;
+    color: var(--champagne);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+.pricing-price {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--text-dark-primary);
+    line-height: 1.1;
+    margin: 20px 0 16px;
+}
+.comparison-table-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+.comparison-table th, .comparison-table td {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border-light);
+    text-align: left;
+}
+.comparison-table th {
+    font-family: var(--font-heading);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-dark-primary);
+}
+.comparison-table td:first-child {
+    font-weight: 500;
+    color: var(--text-dark-primary);
+}
+.comparison-table td:not(:first-child) {
+    color: var(--text-dark-secondary);
+}

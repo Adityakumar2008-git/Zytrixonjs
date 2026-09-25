@@ -1,0 +1,373 @@
+/* ==========================================================================
+   ZYTRIXON — CONTACT & CONSULTATION (DESKTOP UI)
+   ========================================================================== */
+
+.contact-page-wrapper {
+    padding: 160px 6vw 100px;
+    background-color: var(--bg-dark);
+    min-height: 100vh;
+}
+.contact-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 7vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: start;
+}
+.form-editorial-card {
+    background: var(--bg-dark-card);
+    border: 1px solid var(--border-dark);
+    border-radius: 8px;
+    padding: 48px;
+}
+.input-group {
+    margin-bottom: 32px;
+    position: relative;
+}
+.input-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-light-secondary);
+    margin-bottom: 10px;
+}
+.text-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-dark-strong);
+    color: var(--text-light-primary);
+    font-size: 16px;
+    padding: 10px 0;
+    outline: none;
+    font-family: var(--font-sans);
+    transition: border-color 0.3s;
+}
+.text-input:focus {
+    border-color: var(--champagne);
+}
+.tag-pills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+.tag-pill-radio {
+    display: none;
+}
+.tag-pill-box {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid var(--border-dark-strong);
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-light-secondary);
+    cursor: pointer;
+    transition: all 0.3s var(--ease-out);
+}
+.tag-pill-radio:checked + .tag-pill-box {
+    background: var(--champagne);
+    border-color: var(--champagne);
+    color: #0A0B0D;
+    font-weight: 600;
+}
+.contact-coord-item {
+    margin-bottom: 28px;
+}
+.contact-coord-item h4 {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-light-muted);
+    margin-bottom: 6px;
+}
+.contact-coord-item a {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    color: var(--text-light-primary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact-coord-item a:hover {
+    color: var(--champagne);
+}
+
+/* Success Overlay */
+.success-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-dark);
+    z-index: 10005;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s var(--ease-out);
+}
+.success-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.form-legal-notice {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--text-light-muted);
+}
+.form-legal-notice a {
+    color: var(--champagne);
+    text-decoration: underline;
+    transition: color 0.25s ease;
+}
+.form-legal-notice a:hover {
+    color: #FFFFFF;
+}
+
+/* Contact Page Dedicated Footer */
+.contact-page-footer {
+    margin-top: 100px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-dark);
+}
+
+/* ==========================================================================
+   CONTACT PAGE — FREQUENTLY ASKED QUESTIONS (OBSIDIAN ARCHITECTURE)
+   ========================================================================== */
+.contact-faq-section {
+    margin-top: 120px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-faq-header {
+    margin-bottom: 48px;
+    max-width: 720px;
+}
+
+.contact-faq-header .tag-label {
+    margin-bottom: 14px;
+}
+
+.contact-faq-header .editorial-headline {
+    color: #FFFFFF;
+    font-size: clamp(2rem, 3.2vw, 3.2rem);
+    margin-bottom: 16px;
+    line-height: 1.15;
+}
+
+.contact-faq-header .editorial-sub {
+    font-size: 16px;
+    color: var(--text-light-secondary);
+    line-height: 1.6;
+}
+
+.contact-faq-section .faq-accordion-list {
+    display: flex;
+    flex-direction: column;
+    background: rgba(18, 20, 26, 0.45);
+    border: 1px solid var(--border-dark);
+    border-radius: 12px;
+    padding: 8px 32px;
+}
+
+.contact-faq-section .faq-row {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-faq-section .faq-row:first-child {
+    border-top: none;
+}
+
+.contact-faq-section .faq-question-bar {
+    padding: 26px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-heading);
+    font-size: clamp(17px, 1.5vw, 20px);
+    font-weight: 500;
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+.contact-faq-section .faq-row:hover .faq-question-bar {
+    color: var(--champagne);
+}
+
+.contact-faq-section .faq-icon {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--champagne);
+    transition: transform 0.4s var(--ease-out);
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+.contact-faq-section .faq-row.active .faq-icon {
+    transform: rotate(45deg);
+    color: #FFFFFF;
+}
+
+.contact-faq-section .faq-answer-body {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+    transition: max-height 0.45s var(--ease-out), opacity 0.35s var(--ease-out), padding-bottom 0.45s var(--ease-out);
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-light-secondary);
+}
+
+.contact-faq-section .faq-row.active .faq-answer-body {
+    max-height: 380px;
+    opacity: 1;
+    padding-bottom: 26px;
+}
+
+/* ==========================================================================
+   CONTACT PAGE — EMBEDDED AI STRATEGY CHAT TERMINAL
+   ========================================================================== */
+.contact-chat-section {
+    margin-top: 130px;
+    padding-top: 80px;
+    border-top: 1px solid var(--border-dark);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-chat-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 6vw;
+    align-items: start;
+}
+
+.contact-chat-info {
+    max-width: 580px;
+}
+
+.contact-chat-info .tag-label {
+    margin-bottom: 14px;
+}
+
+.contact-chat-info .editorial-headline {
+    color: #FFFFFF;
+    font-size: clamp(2rem, 3.2vw, 3.2rem);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.contact-chat-info .editorial-sub {
+    font-size: 16px;
+    color: var(--text-light-secondary);
+    line-height: 1.6;
+    margin-bottom: 36px;
+}
+
+.chat-feature-points {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.chat-feature-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.chat-feature-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--champagne);
+    margin-top: 6px;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px rgba(216, 199, 181, 0.4);
+}
+
+.chat-feature-point h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.chat-feature-point p {
+    font-size: 13px;
+    color: var(--text-light-secondary);
+    line-height: 1.5;
+}
+
+.chat-info-cta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Embedded Terminal Container */
+.contact-chat-terminal {
+    background: rgba(14, 16, 21, 0.88);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(216, 199, 181, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55), 0 0 24px rgba(216, 199, 181, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+}
+
+.chat-terminal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 22px;
+    background: rgba(18, 20, 26, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.chat-terminal-status .chat-online-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #10B981;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.contact-chat-terminal .chat-messages-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+

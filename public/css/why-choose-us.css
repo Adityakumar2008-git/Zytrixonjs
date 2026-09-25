@@ -1,0 +1,286 @@
+/* ==========================================================================
+   ZYTRIXON — WHY CHOOSE US (DESKTOP UI)
+   ========================================================================== */
+
+.page-header-section {
+    padding: 160px 6vw 70px;
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--border-dark);
+}
+.page-header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Specialities Grid */
+.speciality-section {
+    background-color: var(--bg-light);
+    color: var(--text-dark-primary);
+    padding: 100px 6vw 120px;
+}
+.speciality-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.specialities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 50px;
+}
+.speciality-card {
+    background: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s var(--ease-out), box-shadow 0.3s;
+}
+.speciality-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+    border-color: rgba(216, 199, 181, 0.6);
+}
+.speciality-card.featured {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #0A0B0D 0%, #151821 100%);
+    color: #FFFFFF;
+    border-color: var(--champagne);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+.speciality-card.featured .speciality-num {
+    color: var(--champagne);
+}
+.speciality-card.featured .speciality-title {
+    color: #FFFFFF;
+}
+.speciality-card.featured .speciality-desc {
+    color: rgba(255, 255, 255, 0.7);
+}
+.speciality-num {
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    color: var(--champagne);
+    margin-bottom: 16px;
+    display: block;
+}
+.speciality-title {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-dark-primary);
+    line-height: 1.25;
+}
+.speciality-desc {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--text-dark-secondary);
+    margin-bottom: 24px;
+}
+.speciality-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px;
+}
+.speciality-tag-item {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid var(--border-light);
+    color: var(--text-dark-secondary);
+}
+.speciality-card.featured .speciality-tag-item {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Comparison Section */
+.edge-section {
+    background-color: var(--bg-dark);
+    color: #FFFFFF;
+    padding: 110px 6vw 120px;
+    border-top: 1px solid var(--border-dark);
+    border-bottom: 1px solid var(--border-dark);
+}
+.edge-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.edge-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+}
+.edge-box {
+    border-radius: 8px;
+    padding: 44px 36px;
+}
+.edge-box.traditional {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-dark);
+}
+.edge-box.zytrixon {
+    background: rgba(216, 199, 181, 0.04);
+    border: 1px solid rgba(216, 199, 181, 0.35);
+    position: relative;
+}
+.edge-box-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.edge-box.traditional .edge-box-badge {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-light-muted);
+}
+.edge-box.zytrixon .edge-box-badge {
+    background: var(--champagne);
+    color: #0A0B0D;
+}
+.edge-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.edge-list li {
+    font-size: 14px;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.edge-box.traditional .edge-list li {
+    color: var(--text-light-muted);
+}
+.edge-box.zytrixon .edge-list li {
+    color: var(--text-light-primary);
+}
+.edge-icon-cross {
+    color: #E05252;
+    font-weight: 700;
+}
+.edge-icon-check {
+    color: var(--champagne);
+    font-weight: 700;
+}
+
+/* Testimonials Wall Section */
+.testimonials-wall-section {
+    background-color: var(--bg-light);
+    color: var(--text-dark-primary);
+    padding: 110px 6vw 130px;
+}
+.testimonials-wall-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.testimonials-masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 50px;
+}
+.testi-editorial-card {
+    background: #FFFFFF;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 36px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s var(--ease-out), box-shadow 0.3s;
+}
+.testi-editorial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.05);
+}
+.testi-quote-text {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    line-height: 1.6;
+    font-style: italic;
+    color: var(--text-dark-primary);
+    margin-bottom: 24px;
+}
+.testi-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-top: 1px solid var(--border-light);
+    padding-top: 18px;
+}
+.testi-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #0A0B0D;
+    color: var(--champagne);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+}
+.testi-author-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark-primary);
+}
+.testi-author-role {
+    font-size: 12px;
+    color: var(--text-dark-secondary);
+}
+
+/* Stats Impact Strip */
+.impact-strip-section {
+    background-color: #0B0D11;
+    padding: 80px 6vw;
+    border-top: 1px solid var(--border-dark);
+    border-bottom: 1px solid var(--border-dark);
+}
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.impact-stat-item {
+    text-align: left;
+    border-left: 2px solid rgba(216, 199, 181, 0.3);
+    padding-left: 20px;
+}
+.impact-num {
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+    font-weight: 700;
+    color: var(--champagne);
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+.impact-label {
+    font-size: 13px;
+    color: var(--text-light-secondary);
+    line-height: 1.5;
+}

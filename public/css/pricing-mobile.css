@@ -1,0 +1,26 @@
+/* ==========================================================================
+   ZYTRIXON — PRICING & ENGAGEMENTS (MOBILE UI)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .pricing-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}
+
+@media (max-width: 640px) {
+    .page-header-section {
+        padding: 130px 6vw 50px;
+    }
+    .pricing-section-wrap {
+        padding: 60px 6vw 80px;
+    }
+    .pricing-editorial-card {
+        padding: 32px 24px;
+    }
+    .comparison-table th, .comparison-table td {
+        padding: 14px 16px;
+        font-size: 13px;
+    }
+}

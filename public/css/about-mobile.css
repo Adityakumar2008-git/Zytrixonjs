@@ -1,0 +1,45 @@
+/* ==========================================================================
+   ZYTRIXON — ABOUT US (MOBILE UI)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .narrative-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    .principles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .scope-item-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .numbers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header-section {
+        padding: 130px 6vw 50px;
+    }
+    .narrative-section {
+        padding: 70px 6vw 80px;
+    }
+    .principles-section {
+        padding: 70px 6vw 80px;
+    }
+    .scope-section {
+        padding: 70px 6vw 80px;
+    }
+    .numbers-strip {
+        padding: 60px 6vw;
+    }
+    .principles-grid {
+        grid-template-columns: 1fr;
+    }
+    .numbers-grid {
+        grid-template-columns: 1fr;
+    }
+}

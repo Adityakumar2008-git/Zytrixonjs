@@ -1,0 +1,26 @@
+/* ==========================================================================
+   ZYTRIXON — ONBOARDING (MOBILE UI)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .contact-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .form-editorial-card {
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-page-wrapper {
+        padding: 130px 6vw 70px;
+    }
+    .tag-pills-row {
+        gap: 8px;
+    }
+    .tag-pill-box {
+        padding: 7px 14px;
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,145 @@
+/* ==========================================================================
+   ZYTRIXON — LEGAL DOCUMENTS MOBILE STYLESHEET (PRIVACY & TERMS)
+   Strictly Mobile (< 769px) Responsive Rules
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .legal-header {
+        padding: 120px 6vw 40px;
+    }
+
+    .legal-title {
+        font-size: 32px;
+        line-height: 1.18;
+        letter-spacing: -0.02em;
+        margin-bottom: 16px;
+    }
+
+    .legal-subtitle {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .legal-date-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        font-size: 11px;
+    }
+
+    /* Single Column Stack */
+    .legal-main-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding: 40px 6vw 90px;
+    }
+
+    /* Compact Mobile Table of Contents */
+    .legal-sidebar {
+        position: static;
+        top: auto;
+        padding: 20px 18px;
+        border-radius: 6px;
+    }
+
+    .legal-sidebar-title {
+        font-size: 12px;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+    }
+
+    .legal-toc-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4px;
+        max-height: 220px;
+        overflow-y: auto;
+        padding-right: 6px;
+    }
+
+    .legal-toc-link {
+        font-size: 12px;
+        padding: 8px 10px;
+        min-height: 38px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Section Spacing & Typography */
+    .legal-section {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        scroll-margin-top: 80px;
+    }
+
+    .legal-section-number {
+        font-size: 11px;
+    }
+
+    .legal-section-title {
+        font-size: 21px;
+        line-height: 1.25;
+        margin-bottom: 16px;
+    }
+
+    .legal-section-subtitle {
+        font-size: 16px;
+        margin: 22px 0 10px;
+    }
+
+    .legal-p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 16px;
+    }
+
+    .legal-list {
+        margin: 12px 0 20px 12px;
+    }
+
+    .legal-list li {
+        font-size: 13px;
+        line-height: 1.65;
+        padding-left: 16px;
+        margin-bottom: 10px;
+    }
+
+    .legal-callout {
+        padding: 16px 18px;
+        margin: 20px 0 22px;
+    }
+
+    .legal-callout-title {
+        font-size: 12px;
+    }
+
+    .legal-callout p {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    /* Table Touch Scroll Hint */
+    .legal-table-wrap {
+        margin: 20px 0 24px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .legal-table th,
+    .legal-table td {
+        padding: 10px 14px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    /* Stacked Contact Cards */
+    .legal-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 18px;
+    }
+
+    .legal-contact-card {
+        padding: 18px;
+    }
+}
