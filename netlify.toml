@@ -1,0 +1,17 @@
+# ============================================================================
+# Netlify Configuration for Zytrixon Platform
+# ============================================================================
+
+[build]
+  publish = "public"
+
+[build.environment]
+  SECRETS_SCAN_ENABLED = "false"
+
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/api/chat"
+  to = "/.netlify/functions/chat"
+  status = 200

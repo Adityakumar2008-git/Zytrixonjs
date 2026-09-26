@@ -25,9 +25,8 @@ window.ZYTRIXON_CONFIG = {
      * ========================================================================
      */
     chatbot: {
-        // Secure local backend proxy route (handles LLM communication on server)
-        apiUrl: "/api/chat",
-        model: "qwen3.7-flash"
+        // Secure backend proxy route (/api/chat) — ZERO keys or model names exposed to frontend
+        apiUrl: "/api/chat"
     }
 };
 

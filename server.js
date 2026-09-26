@@ -28,8 +28,8 @@ try {
 }
 
 const LLM_API_KEY = process.env.LLM_API_KEY || '';
-const LLM_MODEL = process.env.LLM_MODEL || 'qwen3.7-flash';
-const LLM_ENDPOINT = process.env.LLM_ENDPOINT || 'https://api.bazaarlink.ai/v1/chat/completions';
+const LLM_MODEL = process.env.LLM_MODEL || '';
+const LLM_ENDPOINT = process.env.LLM_ENDPOINT || '';
 
 const ZYTRIXON_SYSTEM_PROMPT = `You are the AI Strategic Advisory Concierge for Zytrixon (zytrixon.com), an elite Business Growth & Strategy Consultancy founded by Aditya Choudhary. Your mission is to provide institutional-grade, highly structured, confidential guidance for founders, enterprise leaders, and campaign strategists.
 
@@ -153,8 +153,19 @@ const server = http.createServer((req, res) => {
                     ...rawMessages.filter(m => m.role !== 'system')
                 ];
 
+                if (!LLM_API_KEY || !LLM_ENDPOINT) {
+                    const fallbackReply = generateStrategicFallback(userLatestMessage);
+                    res.writeHead(200, {
+                        'Content-Type': 'application/json; charset=utf-8',
+                        'Access-Control-Allow-Origin': '*'
+                    });
+                    return res.end(JSON.stringify({
+                        choices: [{ message: { role: 'assistant', content: fallbackReply } }]
+                    }));
+                }
+
                 const postData = JSON.stringify({
-                    model: clientPayload.model || LLM_MODEL,
+                    model: clientPayload.model || LLM_MODEL || 'default',
                     messages: formattedMessages
                 });
 
